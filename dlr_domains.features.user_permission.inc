@@ -35,6 +35,7 @@ function dlr_domains_user_default_permissions() {
     'name' => 'administer domains',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'domain admin',
     ),
   );
 
