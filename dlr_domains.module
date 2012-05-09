@@ -1,3 +1,14 @@
 <?php
 
 include_once('dlr_domains.features.inc');
+
+function dlr_domains_domainadminlinks() {
+  if (user_access('create users')) {
+    $links['add_users'] = array(
+        'title' => t('Create Users'),
+        'href' => 'admin/admin/user/create',
+        'weight' => -10,
+    );
+  }
+  return $links;
+}
