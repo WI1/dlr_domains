@@ -2,6 +2,8 @@
 
 include_once('dlr_domains.features.inc');
 
+//hook_domainadminlinks this hook adds our links to the domain admin block
+
 function dlr_domains_domainadminlinks() {
   if (user_access('create users')) {
     $links['add_users'] = array(
