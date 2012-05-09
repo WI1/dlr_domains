@@ -8,7 +8,7 @@ function dlr_domains_domainadminlinks() {
   if (user_access('create users')) {
     $links['add_users'] = array(
         'title' => t('Create Users'),
-        'href' => 'admin/admin/user/create',
+        'href' => 'admin/user/user/create',
         'weight' => -10,
     );
   }
