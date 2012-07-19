@@ -15,7 +15,6 @@ function dlr_domains_context_default_contexts() {
   $context->conditions = array(
     'user' => array(
       'values' => array(
-        'administrator' => 'administrator',
         'domain admin' => 'domain admin',
       ),
     ),

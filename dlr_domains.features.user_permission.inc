@@ -39,15 +39,6 @@ function dlr_domains_user_default_permissions() {
     ),
   );
 
-  // Exported permission: administer own domains
-  $permissions['administer own domains'] = array(
-    'name' => 'administer own domains',
-    'roles' => array(
-      '0' => 'administrator',
-      '1' => 'domain admin',
-    ),
-  );
-
   // Exported permission: assign domain editors
   $permissions['assign domain editors'] = array(
     'name' => 'assign domain editors',
@@ -61,6 +52,7 @@ function dlr_domains_user_default_permissions() {
     'name' => 'delete domain nodes',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'domain admin',
     ),
   );
 
@@ -69,6 +61,7 @@ function dlr_domains_user_default_permissions() {
     'name' => 'edit domain nodes',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'domain admin',
     ),
   );
 
@@ -101,6 +94,7 @@ function dlr_domains_user_default_permissions() {
     'name' => 'review content for all domains',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'domain admin',
     ),
   );
 

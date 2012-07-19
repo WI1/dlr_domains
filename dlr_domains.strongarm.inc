@@ -48,7 +48,7 @@ function dlr_domains_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_default_source';
-  $strongarm->value = '0';
+  $strongarm->value = '3';
   $export['domain_default_source'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -88,7 +88,7 @@ node/%n/outline';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_root';
-  $strongarm->value = 'oatrium.dev';
+  $strongarm->value = 'dlr.wi1projects.com';
   $export['domain_root'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -123,7 +123,7 @@ node/%n/outline';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_settings_behavior';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['domain_settings_behavior'] = $strongarm;
 
   $strongarm = new stdClass;
