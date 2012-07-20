@@ -16,9 +16,49 @@ function dlr_domains_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'domain_admin_granularity';
+  $strongarm->value = 'multiple';
+  $export['domain_admin_granularity'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'domain_admin_help_pages';
+  $strongarm->value = '';
+  $export['domain_admin_help_pages'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'domain_admin_showlinks';
+  $strongarm->value = array(
+    'domadm_overview' => 'domadm_overview',
+    'domadm_settings' => 0,
+    'domadm_conf' => 0,
+    'domadm_themes' => 0,
+    'domadm_arrange' => 0,
+    'domadm_child' => 0,
+    'domadm_create' => 0,
+    'domadm_primary_links' => 0,
+    'domadm_secondary_links' => 0,
+    'domadm_menu' => 0,
+    'domadm_translate' => 0,
+  );
+  $export['domain_admin_showlinks'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'domain_behavior';
   $strongarm->value = '1';
   $export['domain_behavior'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'domain_bonus_login_restrict';
+  $strongarm->value = 1;
+  $export['domain_bonus_login_restrict'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
